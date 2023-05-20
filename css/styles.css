@@ -1,3 +1,10 @@
+.caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .horario {
     font-size: 6em;
 }
