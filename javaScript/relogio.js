@@ -1,3 +1,4 @@
+//Armazenando o elemento HTML para exibir o horário e data
 const horario = document.getElementById("horario-resposta");
 const data = document.getElementById("data-resposta");
 
@@ -15,5 +16,6 @@ function armazenaDataAtual() {
     data.textContent = dataAtualLocal;
 }
 
+//chamar as funções a cada 1 segundo
 setInterval(armazenaHorarioAtual, 1000);
 setInterval(armazenaDataAtual, 1000);
