@@ -1,3 +1,7 @@
+body {
+    background-color: #4682B4;
+}
+
 .caixa {
     display: flex;
     flex-direction: column;
@@ -6,5 +10,9 @@
 }
 
 .horario {
-    font-size: 6em;
+    font-size: 90px;
+}
+
+.data {
+    font-size: 50px;
 }
