@@ -1,20 +1,21 @@
 //Armazenando o elemento HTML para exibir o horário e data
-const horario = document.getElementById("horario-resposta");
-const data = document.getElementById("data-resposta");
-const dia = document.getElementById("dia-resposta");
+let horario = document.getElementById("horario-resposta");
+let data = document.getElementById("data-resposta");
+let dia = document.getElementById("dia-resposta");
 
 function armazenaHorarioAtual() {
     //Armazenando o horário atual
-    const horarioAtual = new Date();
-    const horarioAtualLocal = horarioAtual.toLocaleTimeString();
+    let horarioAtual = new Date();
+    let horarioAtualLocal = horarioAtual.toLocaleTimeString();
     horario.textContent = horarioAtualLocal;
 }
 
 function armazenaDataAtual() {
     //Armazenando a data atual
-    const dataAtual = new Date();
-    const dataAtualLocal = dataAtual.toLocaleDateString();
-    const diaAtual = dataAtual.getDay();
+    let dataAtual = new Date();
+    let dataAtualLocal = dataAtual.toLocaleDateString();
+    let diaAtual = dataAtual.getDay();
+
 
     data.textContent = dataAtualLocal;
     dia.textContent = diaAtual;
