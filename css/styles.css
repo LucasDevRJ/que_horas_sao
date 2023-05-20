@@ -19,4 +19,10 @@ body {
 .data {
     color: #FFF0F5;
     font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.dia {
+    color: #FFF0F5;
+    font-size: 30px;
 }

@@ -11,14 +11,14 @@ function armazenaHorarioAtual() {
 }
 
 function armazenaDataAtual() {
-    //Armazenando a data atual
+    //Armazenando a data atual e o dia
     let dataAtual = new Date();
     let dataAtualLocal = dataAtual.toLocaleDateString();
     let diaAtual = dataAtual.getDay();
     let diasDaSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
 
     data.textContent = dataAtualLocal;
-    dia.textContent = diasDaSemana[diaAtual];
+    dia.textContent = diasDaSemana[diaAtual]; //pega o dia pelo índice
 }
 
 //chamar as funções a cada 1 segundo
