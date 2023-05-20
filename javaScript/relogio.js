@@ -15,10 +15,10 @@ function armazenaDataAtual() {
     let dataAtual = new Date();
     let dataAtualLocal = dataAtual.toLocaleDateString();
     let diaAtual = dataAtual.getDay();
-
+    let diasDaSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
 
     data.textContent = dataAtualLocal;
-    dia.textContent = diaAtual;
+    dia.textContent = diasDaSemana[diaAtual];
 }
 
 //chamar as funções a cada 1 segundo
