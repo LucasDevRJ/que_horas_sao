@@ -17,5 +17,5 @@ function armazenaDataAtual() {
 }
 
 //chamar as funções a cada 1 segundo
-setInterval(armazenaHorarioAtual, 1000);
-setInterval(armazenaDataAtual, 1000);
+setInterval(armazenaHorarioAtual, 1);
+setInterval(armazenaDataAtual, 1);

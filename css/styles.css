@@ -7,13 +7,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 600px;
 }
 
 .horario {
-    color: #FFFFF0;
-    font-size: 90px;
+    color: #FFF0F5;
+    font-size: 150px;
+    margin-bottom: 30px;
 }
 
 .data {
-    font-size: 50px;
+    color: #FFF0F5;
+    font-size: 70px;
 }
