@@ -14,11 +14,13 @@ function armazenaHorarioAtual() {
 }
 
 function alteraImagemDeFundo(horas) {
-    console.log(horas);
+    horas = 9;
     if (horas >= 6 && horas < 12) {
         body.classList.add("fundo-manha");
     } else if (horas > 12 && horas < 18) {
         body.classList.add("fundo-tarde");
+    } else {
+        body.classList.add("fundo-noite");
     }
 }
 

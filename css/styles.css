@@ -1,10 +1,19 @@
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .fundo-manha {
-    /**background-color: #4682B4;**/
     background-image: url("../manha.jpg");
 }
 
 .fundo-tarde {
     background-image: url("../tarde.jpg");
+}
+
+.fundo-noite {
+    background-image: url("../noite.jpg");
 }
 
 .caixa {
