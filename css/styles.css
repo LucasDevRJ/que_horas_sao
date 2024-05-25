@@ -1,5 +1,10 @@
-body {
-    background-color: #4682B4;
+.fundo-manha {
+    /**background-color: #4682B4;**/
+    background-image: url("../manha.jpg");
+}
+
+.fundo-tarde {
+    background-image: url("../tarde.jpg");
 }
 
 .caixa {

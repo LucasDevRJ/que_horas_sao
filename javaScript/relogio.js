@@ -1,13 +1,25 @@
 //Armazenando o elemento HTML para exibir o horário e data
-let horario = document.getElementById("horario-resposta");
-let data = document.getElementById("data-resposta");
-let dia = document.getElementById("dia-resposta");
+var horario = document.getElementById("horario-resposta");
+var data = document.getElementById("data-resposta");
+var dia = document.getElementById("dia-resposta");
+var body = document.querySelector("body");
 
 function armazenaHorarioAtual() {
     //Armazenando o horário atual
     let horarioAtual = new Date();
     let horarioAtualLocal = horarioAtual.toLocaleTimeString();
+    let horas = horarioAtual.getHours();
     horario.textContent = horarioAtualLocal;
+    alteraImagemDeFundo(horas);
+}
+
+function alteraImagemDeFundo(horas) {
+    console.log(horas);
+    if (horas >= 6 && horas < 12) {
+        body.classList.add("fundo-manha");
+    } else if (horas > 12 && horas < 18) {
+        body.classList.add("fundo-tarde");
+    }
 }
 
 function armazenaDataAtual() {
