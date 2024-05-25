@@ -1,19 +1,25 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../Montserrat/static/Montserrat-Medium.ttf"),
+}
+
 body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Montserrat", serif;
 }
 
 .fundo-manha {
-    background-image: url("../manha.jpg");
+    background-image: url("../imagens/manha.jpg");
 }
 
 .fundo-tarde {
-    background-image: url("../tarde.jpg");
+    background-image: url("../imagens/tarde.jpg");
 }
 
 .fundo-noite {
-    background-image: url("../noite.jpg");
+    background-image: url("../imagens/noite.jpg");
 }
 
 .caixa {
